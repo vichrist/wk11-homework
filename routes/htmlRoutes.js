@@ -9,7 +9,7 @@ module.exports = ((app) => {
   }));
 
  // get request that will return the index.html file 
-  app.get("*", ((req, res) => {
+  app.get("/", ((req, res) => {
     res.sendFile(path.join(__dirname + "../public/index.html"));
     console.log("Successfully returned index.html")
   }))
