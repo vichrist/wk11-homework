@@ -3,7 +3,7 @@ var express = require('express'); // importing express module
 
 var app = express(); //using node module express to create a server 
 
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 8080;
 
 app.use(express.json()); //middleware to handle data parsing 
 app.use(express.urlencoded({ extended: true }));
